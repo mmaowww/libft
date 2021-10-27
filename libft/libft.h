@@ -1,41 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/16 17:48:30 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/10/27 11:16:11 by ebetrix          ###   ########.fr       */
+/*   Created: 2021/10/27 11:52:58 by ebetrix           #+#    #+#             */
+/*   Updated: 2021/10/27 11:58:42 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-//#include <stdio.h>
+#ifndef LIBFT_H
+#define LIBFT_H
+#include <string.h>
+#include <stdio.h>
+#include <unistd.h>
 
-void	ft_bzero(void *s, size_t len)
-{
-	unsigned char	*c;
+int	ft_isalpha(int c);
 
-	c = (unsigned char *)s;
-	while (len > 0)
-	{
-		*c = '\0';
-		c++;
-		len--;
-	}
-}
 
-/*int	main()
-{
-	char	c[6] = "salut";
-	void	*s;
-	size_t	len;
 
-	s = c;
-	len = 3;
-	printf("%s\n", s);
-	ft_bzero(s, len);
-	printf("%s\n", s);
-	return (0);
-}*/
+
+
+
+
+
+
+#endif

@@ -6,13 +6,13 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 17:49:16 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/10/24 18:05:14 by ebetrix          ###   ########.fr       */
+/*   Updated: 2021/10/27 09:48:28 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include 'libft.h'
-#include <stdio.h>
-#include <unistd.h> // pour write
+#include "libft.h"
+//#include <stdio.h>
+//#include <unistd.h> // pour write
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
@@ -39,7 +39,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (i);
 }
 
-int	main()
+/*int	main()
 {
 	char	*test;
 	const char	*test2;
@@ -53,4 +53,4 @@ int	main()
 	printf("2eme: %s\n", test2);
 	ft_strlcpy(test, test2, size);
 	printf("New: %s\n", test);
-}
+}*/

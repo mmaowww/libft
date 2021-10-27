@@ -6,13 +6,13 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 17:53:04 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/10/20 17:17:15 by ebetrix          ###   ########.fr       */
+/*   Updated: 2021/10/24 18:48:11 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include 'libft.h'
-#include <stdio.h>
-#include <string.h>
+#include 'libft.h'
+//#include <stdio.h>
+//#include <string.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -27,7 +27,7 @@ char	*ft_strchr(const char *s, int c)
 	return (0);
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	const char	*s;
 	int			c;
@@ -39,4 +39,4 @@ int	main(int argc, char **argv)
 	printf("Ma fonction : %s\n", ft_strchr(s, c));
 	printf("La vraie : %s\n", strchr(s, c));
 	return (0);
-}
+}*/
