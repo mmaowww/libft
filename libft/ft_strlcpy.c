@@ -6,7 +6,7 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 17:49:16 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/10/27 09:48:28 by ebetrix          ###   ########.fr       */
+/*   Updated: 2021/10/31 17:52:27 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,23 +19,21 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 
 	i = 0;
-	write(1, "toto", 4);
 	if (dstsize == 0)
 	{
 		while (src[i] != '\0')
 			i++;
 		return (i);
 	}
-		printf("i = %zu", i);
 	while (i < dstsize - 1 && src[i] != '\0')
 	{
-		printf("i = %zu", i);
-		write (1, "tata", 4);
 		dst[i] = src[i];
 		i++;
 	}
-	write(1, "titi", 4);
 	dst[i] = '\0';
+	i = 0;
+	while (src[i] != '\0')
+		i++;
 	return (i);
 }
 

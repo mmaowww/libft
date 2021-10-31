@@ -6,8 +6,13 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 17:51:37 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/10/16 17:51:38 by ebetrix          ###   ########.fr       */
+/*   Updated: 2021/10/31 14:13:12 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
+//int atoi(const char *str)
+
 
 

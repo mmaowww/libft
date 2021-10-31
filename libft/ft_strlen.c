@@ -6,14 +6,14 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 17:47:46 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/10/20 14:17:33 by ebetrix          ###   ########.fr       */
+/*   Updated: 2021/10/31 14:19:42 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include 'libft.h'
+#include "libft.h"
 //#include <stdio.h>
 
-int	ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	int	i;
 

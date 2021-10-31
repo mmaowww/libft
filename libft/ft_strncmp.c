@@ -6,11 +6,11 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 17:50:41 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/10/22 15:31:30 by ebetrix          ###   ########.fr       */
+/*   Updated: 2021/10/30 14:32:40 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include 'libft.h'
+#include "libft.h"
 //#include "stdio.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
