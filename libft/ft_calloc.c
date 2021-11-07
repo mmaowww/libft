@@ -11,3 +11,14 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	*ft_calloc(size_t nbrofelement, size_t sizeofelement)
+{
+	char	*str;
+
+	str = malloc(nbrofelement*sizeofelement);
+	if (!str)
+		return (0);
+	ft_memset(str, 0, nbrofelement*sizeofelement);
+	return(str);
+}
