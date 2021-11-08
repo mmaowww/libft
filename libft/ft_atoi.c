@@ -6,7 +6,7 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 17:51:37 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/10/31 14:13:12 by ebetrix          ###   ########.fr       */
+/*   Updated: 2021/11/07 12:53:41 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ int ft_atoi(const char *str)
 		sign = -1;
 		i++;
 	}
+	else if (str[i] == '+')
+		i++;
 	while (str[i] >= '0' && str[i] <= '9' && str[i] != '\0')
 	{
 		res *= 10;
