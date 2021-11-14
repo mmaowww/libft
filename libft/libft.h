@@ -6,16 +6,16 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 11:52:58 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/10/30 14:45:13 by ebetrix          ###   ########.fr       */
+/*   Updated: 2021/11/13 17:23:38 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-#define LIBFT_H
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
+# define LIBFT_H
+# include <string.h>
+# include <stdio.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 void	ft_bzero(void *s, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
@@ -51,6 +51,5 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putendl_fd(char *s, int fd);
-
 
 #endif
