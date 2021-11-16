@@ -6,7 +6,7 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/30 15:51:22 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/11/14 19:40:28 by ebetrix          ###   ########.fr       */
+/*   Updated: 2021/11/16 16:37:09 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,10 @@ int	ft_count_nbr_words(char const *s, char c)
 	i = 0;
 	j = 0;
 	k = ft_strlen(s) - 1;
-	while (s[i] == c)
+	while (s[i] == c && s[i] != '\0')
 		i++;
+	if (s[i] == '\0')
+		return (0);
 	while (k > 0 && s[k] == c)
 		k--;
 	while (s[i] != '\0')
@@ -75,7 +77,7 @@ char	**ft_split(char const *s, char c)
 		s = s + ft_count_len_word(s, c);
 		i++;
 	}
-	s1[i] = "NULL";
+	s1[i] = NULL;
 	return (s1);
 }
 
@@ -84,8 +86,8 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	char	**c;
 
-	printf("%d\n", ft_count_nbr_words("Je vais a la plage.", ' '));
-	c = ft_split("   Je vais    a la plage.   ", ' ');
+	printf("%d\n", ft_count_nbr_words("", 0));
+	c = ft_split("", 0);
 	i = 0;
 	while (i < 5)
 	{

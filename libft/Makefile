@@ -6,7 +6,7 @@
 #    By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/27 11:25:18 by ebetrix           #+#    #+#              #
-#    Updated: 2021/11/13 16:11:13 by ebetrix          ###   ########.fr        #
+#    Updated: 2021/11/16 18:42:25 by ebetrix          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ CFLAGS=-Wall -Wextra -Werror
 RM=rm -f
 SRC = ft_atoi.c ft_bzero.c ft_calloc.c \
 		ft_isalpha.c ft_isascii.c ft_isalnum.c ft_isdigit.c ft_isprint.c \
+		ft_itoa.c \
 		ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c \
 		ft_split.c \
 		ft_strchr.c ft_strlcpy.c ft_strdup.c ft_strjoin.c \
