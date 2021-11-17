@@ -6,7 +6,7 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/30 15:51:47 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/11/16 18:45:19 by ebetrix          ###   ########.fr       */
+/*   Updated: 2021/11/17 16:37:44 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,12 @@
 int	ft_count(int n)
 {
 	int	i;
-	
+
 	i = 0;
 	if (n < 0)
 		i++;
+	if (n == 0)
+		i = 1;
 	while (n != 0)
 	{
 		n /= 10;
@@ -36,8 +38,11 @@ char	*ft_itoa(int n)
 	s = malloc(sizeof(char) * (i + 1));
 	if (!s)
 		return (0);
+	if (n == 0)
+		s[i - 1] = '0';
 	if (n < 0)
 		s[0] = '-';
+	s[i] = '\0';
 	while (n != 0)
 	{
 		if (n >= 0)
@@ -50,11 +55,12 @@ char	*ft_itoa(int n)
 	return (s);
 }
 
-int	main(void)
+/*int	main(void)
 {
-	write(1, ft_itoa(42), 10);
-	write (1, "\n", 1);
+	//write(1, ft_itoa(42), 10);
+	//write (1, "\n", 1);
+	printf("%s\n", ft_itoa(0));
 	printf("%s\n", ft_itoa(42));
 	printf("%d %d\n", 17%10, -17%10);
 	return (0);
-}
+}*/

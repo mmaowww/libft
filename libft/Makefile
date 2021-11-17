@@ -6,7 +6,7 @@
 #    By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/27 11:25:18 by ebetrix           #+#    #+#              #
-#    Updated: 2021/11/16 18:42:25 by ebetrix          ###   ########.fr        #
+#    Updated: 2021/11/17 17:24:15 by ebetrix          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,10 +19,10 @@ SRC = ft_atoi.c ft_bzero.c ft_calloc.c \
 		ft_itoa.c \
 		ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c \
 		ft_split.c \
-		ft_strchr.c ft_strlcpy.c ft_strdup.c ft_strjoin.c \
-		ft_strlcat.c ft_strlen.c \
-		ft_strlcpy.c ft_strnstr.c ft_strncmp.c ft_strrchr.c \
-		ft_strtrim.c ft_substr.c \
+		ft_strchr.c ft_strlcpy.c ft_strdup.c ft_striteri.c \
+		ft_strjoin.c ft_strlcat.c ft_strlen.c \
+		ft_strlcpy.c ft_strnstr.c ft_strncmp.c ft_strmapi.c \
+		ft_strrchr.c ft_strtrim.c ft_substr.c \
 		ft_tolower.c ft_toupper.c
 
 OBJ = $(SRC:.c=.o)

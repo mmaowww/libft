@@ -6,7 +6,7 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 17:49:03 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/10/31 15:58:17 by ebetrix          ###   ########.fr       */
+/*   Updated: 2021/11/17 16:12:40 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	size_t	i;
 
 	i = 0;
-	if (src == NULL)
+	if (src == NULL && dst == NULL)
 		return (dst);
 	if (src > dst)
 	{

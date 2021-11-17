@@ -6,7 +6,7 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/31 14:25:10 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/10/31 14:37:59 by ebetrix          ###   ########.fr       */
+/*   Updated: 2021/11/17 16:41:48 by ebetrix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ void	*ft_memset(void *b, int c, size_t len)
 		((unsigned char *)b)[i] = c;
 		i++;
 	}
-	return(b);
+	return (b);
 }
