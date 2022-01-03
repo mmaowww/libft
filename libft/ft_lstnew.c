@@ -11,3 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
+t_list	*ft_lstnew(void *content)
+{
+	t_list	*amazing;
+
+	amazing = malloc(sizeof(t_list));
+	if (!amazing)
+		return (0);
+	amazing->content = content;
+	amazing->next = NULL;
+	return (amazing);
+}

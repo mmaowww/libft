@@ -11,3 +11,18 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_lstclear(t_list **lst, void (*del)(void*))
+{
+	t_list	*i;
+
+	if (!*lst || !del)
+		return ;
+	while (*lst)
+	{
+		i = (*lst)->next;
+		del((*lst)->content);
+		free((void *)*lst);
+		(*lst) = i;
+	}
+}
