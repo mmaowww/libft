@@ -1,5 +1,5 @@
-./.DS_Store
-./.gitignore
+/.DS_Store
+/.gitignore
 /libft-unit-test
 /libftTester
 *.o
