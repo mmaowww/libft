@@ -6,7 +6,7 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/30 15:50:09 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/11/13 17:22:26 by ebetrix          ###   ########.fr       */
+/*   Updated: 2022/01/07 10:29:10 by ebetrix          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	len;
 	char	*s2;
 
+	if (!s1)
+		return (0);
 	i = 0;
 	while (ft_isset(s1[i], set) == 1)
 		i++;
