@@ -6,7 +6,7 @@
 /*   By: ebetrix <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 11:52:58 by ebetrix           #+#    #+#             */
-/*   Updated: 2021/11/21 16:30:27 by ebetrix          ###   ########.fr       */
+/*   Updated: 2022/01/09 15:48:46 by ebetrix          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-typedef struct		s_list
+typedef struct s_list
 {
-	void			*content; 
+	void			*content;
 	struct s_list	*next;
 }					t_list;
 
